@@ -1,0 +1,18 @@
+.wrapper {
+  @apply bg-no-repeat bg-cover py-[30px] px-4 lg:py-[45px] lg:px-[50px] rounded-[10px] text-center bg-white shadow flex flex-col flex-grow;
+
+  box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.1);
+}
+
+.wrapper::after {
+  content: "";
+  box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.1);
+
+  @apply hidden md:block absolute w-[200px] h-[200px] rounded-[80px] bg-white left-1/2 -translate-x-1/2 -translate-y-[105px] z-[0] rotate-45 top-[90%];
+}
+
+.wrapper::before {
+  content: "";
+
+  @apply hidden md:block absolute w-[265px] h-[180px] left-1/2 -translate-x-1/2 bottom-0 bg-white z-[1];
+}

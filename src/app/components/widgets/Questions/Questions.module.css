@@ -1,0 +1,88 @@
+.progress {
+  @apply w-full bg-[#F9F9F9] min-h-[45px] lg:min-h-[50px] relative border-border-main rounded-xl overflow-hidden;
+}
+
+.progress::before {
+  content: "";
+  box-shadow:
+    0 3px 0 0 #e4b91f,
+    inset 0 12px 17px 0 #ffe58e;
+
+  @apply absolute left-0 top-0 bottom-0 h-full py-2 px-4 lg:py-2.5 lg:px-6 bg-yellow-1 text-lg font-medium lg:text-xl ease-linear duration-200;
+}
+
+.progress.step1::before {
+  content: "17%";
+  width: 17%;
+}
+
+.progress.step2::before {
+  content: "34%";
+  width: 34%;
+}
+
+.progress.step5::before {
+  content: "51%";
+  width: 51%;
+}
+
+.progress.step6::before {
+  content: "68%";
+  width: 68%;
+}
+
+.progress.step7::before {
+  content: "85%";
+  width: 85%;
+}
+
+.progress.step8::before {
+  content: "100%";
+  width: 100%;
+}
+
+.label {
+  position: relative;
+  overflow: hidden;
+}
+
+.label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  filter: blur(8px);
+  animation: slide 3s infinite;
+}
+@keyframes slide {
+  0% {
+    left: -100%;
+  }
+
+  50% {
+    left: 100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+.nextBtn {
+  @apply relative;
+}
+
+.nextBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  filter: blur(8px);
+  animation: slide 3s infinite;
+}

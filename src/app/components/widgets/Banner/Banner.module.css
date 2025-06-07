@@ -1,0 +1,285 @@
+.wrapper {
+  @apply bg-no-repeat bg-cover bg-left lg:bg-center min-h-[calc(100dvh-60px)] lg:min-h-[calc(100vh-160px)] flex flex-col pb-20 w-full relative;
+}
+
+.blur {
+  @apply backdrop-blur-[2px] absolute left-0 right-0 top-0 bottom-0 w-full h-full z-[1];
+}
+
+.wrapper.one {
+  background-image: url("/assets/images/banner/dark_bg.jpg");
+}
+
+.wrapper.two {
+  background-image: url("/assets/images/banner/banner-mob-3.jpg");
+}
+
+.wrapper.three {
+  background-image: url("/assets/images/banner/banner-mob-4.jpg");
+}
+
+.wrapper.four {
+  background-image: url("/assets/images/kitchen/8/1.jpg");
+}
+
+.wrapper.five {
+  background-image: url("/assets/images/banner/banner-mob-2.jpg");
+}
+
+.input {
+  @apply outline-none max-w-full sm:max-w-[364px] w-full font-normal leading-[20px] text-black pt-6 pb-6 pl-6 sm:pt-5 sm:pb-6 sm:pl-6 rounded-[11px] bg-white h-[50px];
+  border: 1px solid rgba(185, 185, 185, 0.9);
+  backdrop-filter: blur(30px);
+}
+
+.infoItems {
+  @apply grid grid-cols-1 gap-3 lg:ml-auto lg:max-w-[465px] mb-3 lg:mb-0 max-sm:hidden;
+}
+
+@media (min-width: 768px) {
+  /* .wrapper.one {
+    background-image: url("/assets/images/banner/banner-1.jpg");
+  } */
+
+  .wrapper.two {
+    background-image: url("/assets/images/banner/banner-2.jpg");
+  }
+
+  .wrapper.three {
+    background-image: url("/assets/images/banner/banner-3.jpg");
+  }
+
+  .wrapper.four {
+    background-image: url("/assets/images/kitchen/17/1.jpg");
+  }
+
+  .wrapper.five {
+    background-image: url("/assets/images/banner/banner-4.jpg");
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 550px) {
+  .infoItems {
+    display: none;
+  }
+}
+
+.slideFourTextWrapper {
+  @apply flex flex-col mt-6;
+}
+
+.smallText {
+  @apply text-sm mt-1 lg:mt-2 font-medium text-black relative z-10;
+}
+
+.desktopArrows {
+  @apply flex items-center gap-2 absolute left-1/2 -translate-x-1/2 bottom-[calc(100%)];
+}
+
+.formWrapper {
+  @apply grid grid-cols-1 lg:grid-cols-2 items-end gap-[100px] absolute left-0 right-0 bottom-[60px] lg:bottom-[80px] px-4 z-20;
+}
+
+.spanBigSub {
+  @apply text-4xl lg:text-7xl -ml-3;
+}
+
+.mobArrows {
+  @apply flex lg:hidden items-center gap-2 absolute left-1/2 -translate-x-1/2 bottom-[calc(100%+5px)];
+}
+
+.arrowImg {
+  @apply animate-bounce inline lg:inline w-[60px] h-[60px];
+}
+
+.card {
+  @apply w-[40px] min-w-[40px] h-auto lg:w-[50px] lg:min-w-[50px] inline-block;
+}
+
+.installmentsImg {
+  @apply hidden md:block w-full max-w-[400px] h-auto absolute lg:right-40;
+}
+
+@media (min-width: 1200px) {
+  .installmentsImg {
+    @apply right-[24%];
+  }
+}
+
+@media (min-width: 1350px) {
+  .installmentsImg {
+    @apply right-[30%];
+  }
+}
+
+@media (min-width: 1700px) {
+  .installmentsImg {
+    @apply right-[35%];
+  }
+}
+
+@media (max-width: 1024px) {
+  .installmentsImg {
+    @apply -right-10;
+  }
+}
+
+@media (min-width: 1024px) and (max-height: 785px) {
+  .arrowImg {
+    @apply w-[45px] h-[45px];
+  }
+}
+
+@media (min-width: 1024px) and (max-height: 750px) {
+  .text img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .card {
+    @apply min-w-[55px] w-[55px];
+  }
+
+  .magnit {
+    @apply mt-0;
+  }
+
+  .slideFourTextWrapper {
+    margin-top: 35px;
+  }
+
+  .smallText {
+    margin-top: 4px;
+  }
+
+  .desktopArrows.lgHidden {
+    display: none;
+  }
+
+  .formWrapper {
+    grid-template-columns: 550px 1fr;
+  }
+
+  .spanBigSub {
+    font-size: 40px;
+  }
+
+  .infoItems {
+    position: absolute;
+    right: 15px;
+    bottom: -25px;
+  }
+
+  .installmentsImg {
+    @apply -top-8;
+  }
+}
+
+@media (min-width: 1024px) and (max-height: 715px) {
+  .desktopArrows {
+    display: none;
+  }
+}
+
+@media (min-width: 1500px) and (max-height: 750px) {
+  .desktopArrowsTwo {
+    @apply hidden;
+  }
+}
+
+.mobOrderBtn {
+  @apply relative w-max mt-14;
+}
+
+@media (max-width: 1024px) and (max-height: 680px) {
+  .mobArrows {
+    display: none;
+  }
+
+  .mobArrows.mobArrowsShowAlways {
+    display: flex;
+  }
+
+  .mobOrderBtn {
+    margin-top: 8px;
+  }
+}
+
+@media (min-width: 1024px) and (max-height: 675px) {
+  .installmentsImg {
+    @apply right-[20%];
+  }
+}
+
+@media (min-width: 1280px) and (max-height: 675px) {
+  .installmentsImg {
+    @apply right-[27%];
+  }
+}
+
+@media (max-width: 500px) and (max-height: 700px) {
+  .mobOrderBtn {
+    @apply hidden;
+  }
+}
+
+.text {
+  @apply text-xl font-bold text-black md:text-2xl lg:text-3xl xl:text-4xl lg:max-w-[630px] xl:max-w-[600px] 2xl:max-w-[700px] lg:leading-[normal] lg:font-bold relative z-10;
+}
+
+.percent {
+  @apply text-5xl text-yellow-2 font-black lg:text-8xl xl:text-9xl;
+}
+
+.text ul li {
+  @apply text-base md:text-lg xl:text-xl 2xl:text-2xl;
+}
+
+@media (min-width: 1024px) and (max-height: 780px) {
+  .percent {
+    @apply text-[90px];
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 750px) {
+  .mobArrows {
+    @apply hidden;
+  }
+
+  .mobOrderBtn {
+    @apply mt-2;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 645px) {
+  .mobOrderBtn {
+    @apply !hidden;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper.one .mobOrderBtn,
+  .wrapper.five .mobOrderBtn {
+    @apply flex;
+  }
+}
+
+.installmentsImgMob {
+  @apply absolute -right-36 w-[110px] h-auto md:hidden top-1/2 -translate-y-[43%];
+}
+
+@media (max-width: 768px) and (min-width: 365px) and (max-height: 950px) {
+  .installmentsImgMob {
+    @apply w-[170px] -right-[204px] -translate-y-[40%];
+  }
+}
+
+@media (max-width: 365px) and (max-height: 700px) {
+  .wrapper.one .mobOrderBtn {
+    @apply hidden;
+  }
+
+  .text ul {
+    @apply mt-0;
+  }
+}

@@ -1,0 +1,18 @@
+.wrapper {
+  @apply flex flex-col gap-4;
+}
+
+.wrapper h3 {
+  @apply font-medium text-xl lg:text-2xl;
+}
+
+.wrapper p {
+  @apply text-base lg:text-lg leading-normal;
+}
+
+.wrapper ul li {
+  @apply text-base lg:text-lg leading-normal;
+
+  list-style-type: decimal;
+  margin-left: 20px;
+}

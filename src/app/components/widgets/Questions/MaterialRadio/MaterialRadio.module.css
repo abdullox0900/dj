@@ -1,0 +1,7 @@
+.radio {
+  @apply w-6 h-6 rounded border border-border-main;
+}
+
+input[type="checkbox"]:checked + label .radio {
+  @apply bg-yellow-500 border-yellow-500;
+}

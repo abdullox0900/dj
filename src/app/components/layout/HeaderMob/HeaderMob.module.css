@@ -1,0 +1,15 @@
+.orderBtn {
+  @apply !hidden;
+}
+
+@media (max-width: 379px) and (max-height: 700px) {
+  .orderBtn {
+    @apply !flex !w-max !text-xs !px-3 !py-2 ml-auto;
+  }
+}
+
+@media (max-width: 350px) and (max-height: 700px) {
+  .orderBtn {
+    @apply !px-2 !py-1 !text-[10px];
+  }
+}

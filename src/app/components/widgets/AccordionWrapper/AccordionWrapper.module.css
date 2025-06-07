@@ -1,0 +1,19 @@
+.wrapper {
+  @apply py-[40px] md:py-[80px] mb-[70px] sm:mb-0 mt-[35px] lg:mt-[45px];
+  background-image: url("/assets/images/accordion__bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.accordion__title {
+  @apply font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl text-[#292929] md:text-[#252525] mb-5;
+}
+
+.children {
+  @apply overflow-hidden font-normal text-base text-[#101010] md:text-lg;
+}
+
+.children span {
+  @apply font-semibold;
+}

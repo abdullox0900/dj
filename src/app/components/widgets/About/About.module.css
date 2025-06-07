@@ -1,0 +1,44 @@
+.wrapper {
+  background-image: url("/assets/images/about.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @apply my-0 py-[20px] sm:py-[30px] relative overflow-hidden;
+}
+
+.about__container {
+  @apply flex items-center justify-between gap-4 lg:gap-6 w-full flex-col lg:flex-row;
+}
+
+.left {
+  @apply flex flex-col gap-[15px] sm:gap-[20px] flex-1;
+  background: transparent;
+  z-index: 10;
+}
+
+.wrapper::before {
+  content: "";
+  display: block;
+  width: 1136px;
+  border-radius: 100%;
+  position: absolute;
+  top: -150px;
+  background: #fff;
+  filter: blur(130.8999938964844px);
+  opacity: 0.8;
+  z-index: 0;
+
+  @apply left-[-300px] sm:left-[-150px] h-[891px] sm:h-[1136px] hidden lg:block;
+}
+
+.description {
+  @apply font-medium text-base lg:text-lg xl:text-xl leading-[137%] text-white lg:text-black;
+}
+
+.card__title {
+  @apply font-extrabold text-2xl lg:text-3xl xl:text-4xl;
+}
+
+.card__desc {
+  @apply w-full font-medium text-sm lg:text-base xl:text-lg leading-[133%] text-[#292929] sm:leading-[128%];
+}

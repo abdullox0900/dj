@@ -1,0 +1,29 @@
+.button {
+  @apply p-2 sm:px-2 sm:py-1 sm:mr-8 text-sm sm:text-lg rounded-2xl bg-[rgb(255,222,89)] mt-4 font-bold ml-auto flex justify-center items-center ease-linear duration-200 hover:bg-yellow-2 active:opacity-80 max-[340px]:w-full sm:w-[238px] overflow-hidden relative;
+}
+
+.button.active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  filter: blur(8px);
+  animation: slide 1.5s infinite;
+}
+
+@keyframes slide {
+  0% {
+    left: -100%;
+  }
+
+  50% {
+    left: 100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}

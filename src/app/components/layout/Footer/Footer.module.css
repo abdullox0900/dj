@@ -1,0 +1,15 @@
+.ul__title {
+  @apply font-bold text-xl text-black;
+}
+
+.footer__container {
+  @apply flex flex-col items-start justify-between pb-[40px] sm:pb-[51px] border-b gap-[30px] sm:gap-6 lg:flex-row;
+}
+
+.navigation__nav {
+  @apply flex w-full justify-between;
+}
+
+.ul__li {
+  @apply font-medium text-sm xl:text-base;
+}

@@ -1,0 +1,47 @@
+.btn {
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    0 3px 0 0 #e4b91f,
+    inset 0 12px 17px 0 #ffe58e;
+
+  @apply !bg-yellow-1 border mb-[2px] border-yellow-1 rounded-xl py-2.5 px-5 text-base font-semibold ease-linear duration-200 flex justify-center items-center gap-2 text-center leading-5 w-full;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  filter: blur(8px);
+  animation: slide 3s infinite;
+}
+
+@keyframes slide {
+  0% {
+    left: -100%;
+  }
+
+  50% {
+    left: 100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+.btn:disabled {
+  @apply opacity-50;
+}
+
+.btn:hover {
+  @apply !bg-yellow-1/80;
+}
+
+.btn:disabled:hover {
+  @apply opacity-50;
+}

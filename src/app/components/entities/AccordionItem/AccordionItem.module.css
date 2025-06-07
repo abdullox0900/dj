@@ -1,0 +1,24 @@
+.accordion__item {
+  border: 1px solid rgba(185, 185, 185, 0.9);
+  border-radius: 11px;
+
+  backdrop-filter: blur(30px);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.accordion__title {
+  @apply font-medium text-base lg:text-lg text-[#101010] text-left;
+}
+
+.button {
+  @apply flex justify-between items-center w-full py-3 px-5 lg:px-6 gap-3;
+  border-bottom: 1px solid #b9b9b9;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.children {
+  @apply overflow-hidden;
+}
