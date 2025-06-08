@@ -128,7 +128,7 @@ export const DProjectScreen = () => {
                 </div>
 
                 <div>
-                  <p className="text-[#fff] font-bold text-[18px] md:text-[22px] drop-shadow-md max-[425px]:text-[12px]">
+                  <p className="text-[#fff] font-light text-[14px] leading-[1.2] md:text-[22px] drop-shadow-md max-[425px]:text-[12px]">
                     СТОИМОСТЬ 3D ДИЗАЙН-ПРОЕКТА С
                     <br />
                     ПОДРОБНЫМ ПЛАНОМ КОММУНИКАЦИЙ - 200 р
@@ -136,9 +136,6 @@ export const DProjectScreen = () => {
                 </div>
 
                 <div>
-                  <p className="text-[#fff] text-sm font-light max-[425px]:text-[11px]">
-                    Стоимость дизайн проекта – 200 руб
-                  </p>
                   <p className="text-[#FFD700] font-extrabold text-xl md:text-3xl drop-shadow-md max-[425px]:text-[18px]">
                     БЕСПЛАТНО ПРИ ЗАКАЗЕ КУХНИ
                   </p>
