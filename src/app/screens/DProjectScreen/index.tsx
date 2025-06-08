@@ -128,6 +128,14 @@ export const DProjectScreen = () => {
                 </div>
 
                 <div>
+                  <p className="text-[#fff] font-bold text-[18px] md:text-[22px] drop-shadow-md max-[425px]:text-[12px]">
+                    СТОИМОСТЬ 3D ДИЗАЙН-ПРОЕКТА С
+                    <br />
+                    ПОДРОБНЫМ ПЛАНОМ КОММУНИКАЦИЙ - 200 р
+                  </p>
+                </div>
+
+                <div>
                   <p className="text-[#fff] text-sm font-light max-[425px]:text-[11px]">
                     Стоимость дизайн проекта – 200 руб
                   </p>
