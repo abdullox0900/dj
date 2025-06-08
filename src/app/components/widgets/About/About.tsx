@@ -8,7 +8,7 @@ export const About = () => {
 
   return (
     <div id="about">
-      <div className={cn(styles.wrapper, "h-screen max-h-screen max-[550px]:h-[70vh] flex items-center")}>
+      <div className={cn(styles.wrapper, "h-screen max-h-screen max-[550px]:h-auto max-[550px]:py-[40px] flex items-center")}>
         <div className={cn("container", styles.about__container)}>
           <div className={styles.left}>
             <div
