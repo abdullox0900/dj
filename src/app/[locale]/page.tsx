@@ -1,5 +1,5 @@
-import { useLocale } from "next-intl";
-import { Anchor } from "../components/Anchor/Anchor";
+import { useLocale } from "next-intl"
+import { Anchor } from "../components/Anchor/Anchor"
 import {
   About,
   AccordionWrapper,
@@ -11,17 +11,17 @@ import {
   Promotions,
   Questions,
   StepsBuilding,
-} from "../components/widgets";
-import { CalcModal } from "../components/widgets/CalcModal/CalcModal";
-import { DesignerModal } from "../components/widgets/DesignerModal/DesignerModal";
-import { ModernKitchensWrapper } from "../components/widgets/ModernKitchensWrapper";
-import { PromotionsQuiz } from "../components/widgets/PromotionsQuiz";
-import { Reviews } from "../components/widgets/Reviews/Reviews";
-import { ContentApp } from "../components/widgets/StepsBuilding/ContentItems/ContentApp/ContentApp";
-import { WhyUs } from "../components/widgets/WhyUs";
+} from "../components/widgets"
+import { CalcModal } from "../components/widgets/CalcModal/CalcModal"
+import { DesignerModal } from "../components/widgets/DesignerModal/DesignerModal"
+import { ModernKitchensWrapper } from "../components/widgets/ModernKitchensWrapper"
+import { PromotionsQuiz } from "../components/widgets/PromotionsQuiz"
+import { Reviews } from "../components/widgets/Reviews/Reviews"
+import { ContentApp } from "../components/widgets/StepsBuilding/ContentItems/ContentApp/ContentApp"
+import { WhyUs } from "../components/widgets/WhyUs"
 
 export default function Home() {
-  const locale = useLocale();
+  const locale = useLocale()
 
   return (
     <main className="flex min-h-screen flex-col justify-between">
@@ -68,5 +68,5 @@ export default function Home() {
         <PromotionsQuiz />
       </Anchor>
     </main>
-  );
+  )
 }

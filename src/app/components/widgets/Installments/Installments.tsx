@@ -21,9 +21,9 @@ export const Installments: FC<PropsWithClassName> = ({ className }) => {
       )}
       id="credit"
     >
-      <div className="container flex flex-col h-full flex-grow items-center">
+      <div className="container flex flex-col h-full flex-grow items-center justify-center">
         <div className="relative flex flex-col items-center max-w-[1200px] w-full">
-          <h2 className="font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl w-full max-w-[850px] text-center relative z-10 mb-6">
+          <h2 className="font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl w-full max-w-[850px] text-center relative z-10 mb-6 max-[550px]:text-[18px] max-[550px]:leading-[95%]">
             {t.rich("installments-title", {
               br: () => <br></br>,
             })}
@@ -39,7 +39,7 @@ export const Installments: FC<PropsWithClassName> = ({ className }) => {
                   width={40}
                   height={40}
                 />
-                <p>{t("installments-1")}</p>
+                <p className="max-[550px]:text-[12px]">{t("installments-1")}</p>
               </li>
               <li className="flex gap-3">
                 <Image
@@ -49,7 +49,7 @@ export const Installments: FC<PropsWithClassName> = ({ className }) => {
                   width={40}
                   height={40}
                 />
-                <p>{t("installments-2")}</p>
+                <p className="max-[550px]:text-[12px]">{t("installments-2")}</p>
               </li>
               <li className="flex gap-3">
                 <Image
@@ -59,12 +59,12 @@ export const Installments: FC<PropsWithClassName> = ({ className }) => {
                   width={40}
                   height={40}
                 />
-                <p>{t("installments-3")}</p>
+                <p className="max-[550px]:text-[12px]">{t("installments-3")}</p>
               </li>
             </ul>
 
             <Image
-              className="w-full max-w-[400px] h-auto lg:max-w-[450px]"
+              className="w-full max-w-[400px] h-auto lg:max-w-[450px] max-[550px]:w-[200px]"
               src="/assets/images/installments-img.png"
               alt="installments"
               sizes="100vw"

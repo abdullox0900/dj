@@ -36,19 +36,19 @@ export const About = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 sm:flex-1 w-full z-50 rounded-[20px] overflow-hidden">
-            <div className="flex flex-col gap-2 bg-yellow-2 text-[#292929] px-[20px] py-[20px] md:px-[30px] md:py-[20px] max-w-full w-full lg:min-h-[160px]">
-              <h3 className={cn(styles.card__title, "text-[#292929]")}>30</h3>
+            <div className="flex flex-col gap-2 bg-yellow-2 text-[#292929] px-[20px] py-[20px] md:px-[30px] md:py-[20px] max-w-full w-full lg:min-h-[160px] max-[550px]:px-[10px] max-[550px]:py-[10px]">
+              <h3 className={cn(styles.card__title, "text-[#292929] max-[550px]:text-[16px]")}>30</h3>
               <p className={styles.card__desc}>
                 {t("Years of experience in the furniture industry")}
               </p>
             </div>
-            <div className="flex flex-col gap-2 bg-[#fff] px-[20px] py-[20px] md:px-[30px] md:py-[20px] max-w-full w-full lg:min-h-[160px]">
+            <div className="flex flex-col gap-2 bg-[#fff] px-[20px] py-[20px] md:px-[30px] md:py-[20px] max-w-full w-full lg:min-h-[160px] max-[550px]:px-[10px] max-[550px]:py-[10px]">
               <h3 className={cn(styles.card__title, "text-yellow-2")}>
-                <span className="text-xl">{t("Up to")}</span> 5
+                <span className="text-xl max-[550px]:text-[14px]">{t("Up to")}</span> 5
               </h3>
               <p className={styles.card__desc}>{t("Years of warranty")}</p>
             </div>
-            <div className="flex flex-col gap-2 bg-yellow-2 sm:bg-[#fff] px-[20px] py-[20px] md:px-[30px] md:py-[20px] max-w-full w-full lg:min-h-[160px]">
+            <div className="flex flex-col gap-2 bg-yellow-2 sm:bg-[#fff] px-[20px] py-[20px] md:px-[30px] md:py-[20px] max-w-full w-full lg:min-h-[160px] max-[550px]:px-[10px] max-[550px]:py-[10px]">
               <h3
                 className={cn(
                   styles.card__title,
@@ -61,14 +61,14 @@ export const About = () => {
                 {t("Comprehensive design project")}
               </p>
             </div>
-            <div className="flex flex-col gap-2 bg-[#fff] sm:bg-yellow-2 px-[20px] py-[20px] md:px-[30px] md:py-[20px] max-w-full w-full lg:min-h-[160px]">
+            <div className="flex flex-col gap-2 bg-[#fff] sm:bg-yellow-2 px-[20px] py-[20px] md:px-[30px] md:py-[20px] max-w-full w-full lg:min-h-[160px] max-[550px]:px-[10px] max-[550px]:py-[10px]">
               <h3
                 className={cn(
                   styles.card__title,
                   "text-yellow-2 sm:text-[#292929]",
                 )}
               >
-                <span className="text-xl">
+                <span className="text-xl max-[550px]:text-[14px]">
                   {locale === "ru" ? t("Under") : t("Installment")}
                 </span>{" "}
                 0%

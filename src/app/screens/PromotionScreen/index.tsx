@@ -1,12 +1,10 @@
 "use client"
 
-import { BoxWrapper } from "@/app/components"
 import { Anchor } from "@/app/components/Anchor/Anchor"
 import { Button } from "@/app/components/ui"
 import { Thumbs } from "@/app/components/widgets"
 import { setOpenCallbackModal } from "@/app/lib/features/main/mainSlice"
 import { useAppDispatch } from "@/app/lib/hooks"
-import Image from "next/image"
 import { useTranslations } from "use-intl"
 
 export const PromotionScreen = () => {
@@ -113,8 +111,8 @@ export const PromotionScreen = () => {
                     </div>
                 </div>
 
-                <BoxWrapper className="lg:pt-0 mt-[20px]" title={t("Stocks")}>
-                    <div className="mb-8 space-y-3">
+                {/* <BoxWrapper className="lg:pt-0 mt-[20px]" title={t("Stocks")}>. */}
+                {/* <div className="mb-8 space-y-3">
                         <div className="flex flex-col gap-2 text-[20px] font-medium">
                             <h2 className="text-2xl font-bold mb-4">Условия участия в Акции:</h2>
                             <p>Для участия в акции закажите кухню от 6000руб. и технику:</p>
@@ -137,10 +135,10 @@ export const PromotionScreen = () => {
                                 Акционное предложение
                             </p>
                         </div>
-                    </div>
+                    </div> */}
 
-                    {/* CTA Button at the bottom of the page */}
-                    <div className="mt-10">
+                {/* CTA Button at the bottom of the page */}
+                {/* <div className="mt-10">
                         <Button
                             className="w-full md:max-w-md mx-auto py-[25px] h-[65px] text-black rounded-[8px] text-[20px] max-[425px]:h-[50px] max-[425px]:py-[15px]"
                             classNameSpan="font-bold text-[20px] py-[30px] max-[425px]:text-[16px] max-[425px]:py-[20px]"
@@ -148,7 +146,7 @@ export const PromotionScreen = () => {
                             onClick={() => dispatch(setOpenCallbackModal(true, "Заявка на участие в акции"))}
                         />
                     </div>
-                </BoxWrapper>
+                </BoxWrapper> */}
             </Anchor>
         </main>
     )

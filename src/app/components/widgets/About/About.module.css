@@ -36,9 +36,9 @@
 }
 
 .card__title {
-  @apply font-extrabold text-2xl lg:text-3xl xl:text-4xl;
+  @apply font-extrabold text-2xl lg:text-3xl xl:text-4xl max-[550px]:text-[16px];
 }
 
 .card__desc {
-  @apply w-full font-medium text-sm lg:text-base xl:text-lg leading-[133%] text-[#292929] sm:leading-[128%];
+  @apply w-full font-medium text-sm lg:text-base xl:text-lg leading-[133%] text-[#292929] sm:leading-[128%] max-[550px]:text-[12px];
 }

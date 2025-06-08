@@ -6,7 +6,6 @@ import { useLocale, useTranslations } from "next-intl"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
 import { ChangeEvent, FormEvent, useState } from "react"
-import { FaGift } from "react-icons/fa"
 import { toast } from "react-toastify"
 import { Socials } from "../../.."
 import { DesignerForm } from "./DesignerForm/DesignerForm"
@@ -200,12 +199,6 @@ export const ContentApp = () => {
                   : t("Send a request") + " " + t("and get gift")
               }
               disabled={isLoading}
-              icon={
-                <FaGift
-                  className="inline -translate-y-[1px] ml-2"
-                  color="#f97316"
-                />
-              }
             />
           </form>
         </div>

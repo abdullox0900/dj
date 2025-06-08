@@ -1,5 +1,6 @@
 "use client"
 
+import NewGif from "@/app/assets/new-gif.png"
 import {
   setOpenCallbackModal,
   setOpenFreeConsultationModal
@@ -8,8 +9,8 @@ import { useAppDispatch } from "@/app/lib/hooks"
 import { formatDate } from "@/app/utils"
 import cn from "clsx"
 import { useLocale, useTranslations } from "next-intl"
+import Image from 'next/image'
 import { useState } from "react"
-import { FaGift } from "react-icons/fa"
 import "swiper/css"
 import "swiper/css/pagination"
 import { Button } from "../../ui"
@@ -49,13 +50,8 @@ export const Banner = () => {
               className="mx-auto w-full !mb-5 !text-xl max-w-[400px]"
               onClick={open}
             >
-              <div>
-                {t.rich("banner-button", {
-                  giftImg: () => (
-                    <FaGift className="inline text-2xl" color="#355500" />
-                  ),
-                })}
-              </div>
+              Забронировать скидку и
+              <Image src={NewGif} alt="newGif" width={40} height={40} />
             </Button>
           </div>
         </div>
