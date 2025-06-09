@@ -27,7 +27,7 @@ export const DProjectScreen = () => {
         </div>
 
         {/* Promotion Section */}
-        <div className="bg-[#121212] text-white py-10 md:py-20 bg-[url('/assets/images/3d-bg.jpg')] bg-cover bg-center bg-blend-overlay bg-opacity-90 ">
+        <div className="bg-[#121212] text-white py-10 md:py-20 bg-[url('/assets/images/accordion__bg.jpg')] bg-cover bg-center bg-blend-overlay bg-opacity-90 ">
           <div className=" px-4 md:px-6 flex justify-center max-[425px]:px-0">
             <div className="w-full max-w-md md:max-w-2xl bg-black bg-opacity-70 p-6 md:p-10 rounded-lg max-[425px]:p-2 max-[425px]:py-[20px]">
               {/* Main Headline */}
@@ -148,7 +148,7 @@ export const DProjectScreen = () => {
                   className="w-full py-[25px] h-[65px] text-black rounded-[8px] text-[20px] max-[425px]:h-[50px] max-[425px]:py-[15px]"
                   classNameSpan="font-bold text-[20px] py-[30px] max-[425px]:text-[16px] max-[425px]:py-[20px]"
                   title={"ОСТАВИТЬ ЗАЯВКУ НА 3D-ПРОЕКТ"}
-                  onClick={() => dispatch(setOpenCallbackModal(true, "1 блок. Форма 'Заявка на 3D проект'"))}
+                  onClick={() => dispatch(setOpenCallbackModal(true, 'Заявка на 3D проект'))}
                 />
               </div>
             </div>
@@ -203,6 +203,22 @@ export const DProjectScreen = () => {
               <p className="text-xl lg:text-2xl font-semibold">
                 3. 3D проект кухни
               </p>
+              <Image
+                className="w-full h-auto max-w-4xl mx-auto"
+                src="/assets/images/3d-bg.jpg"
+                alt="3D проект кухни"
+                width={0}
+                height={0}
+                sizes="100%"
+              />
+              <Image
+                className="w-full h-auto max-w-4xl mx-auto"
+                src="/assets/images/3d-project/6.jpg"
+                alt="3D проект кухни"
+                width={0}
+                height={0}
+                sizes="100%"
+              />
               <Image
                 className="w-full h-auto max-w-4xl mx-auto"
                 src="/assets/images/3d-project/7.jpg"
@@ -264,7 +280,7 @@ export const DProjectScreen = () => {
                 className="py-[15px] px-[30px] text-black rounded-[8px] text-[18px]"
                 classNameSpan="font-bold"
                 title={"ОСТАВИТЬ ЗАЯВКУ НА ПРОЕКТ"}
-                onClick={() => dispatch(setOpenCallbackModal(true, "Блок в конце страницы. Форма 'Заявка на проект'"))}
+                onClick={() => dispatch(setOpenCallbackModal(true, "Заявка на проект"))}
               />
             </div>
           </div>
