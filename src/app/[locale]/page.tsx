@@ -32,6 +32,10 @@ export default function Home() {
 
         <Promotions />
 
+        <h2 className="text-center text-[45px] font-bold max-[550px]:text-[28px]">
+          Кухни
+        </h2>
+
         <ModernKitchensWrapper>
           <ModernKitchens className="!pt-3" />
         </ModernKitchensWrapper>

@@ -228,7 +228,7 @@
 		"I don't know": "Еще не знаю",
 		"Choose at least one option": "Выберите хотя бы один вариант",
 		"welcome-message": "Кухни на заказ со скидкой 23% и техникой в подарок",
-		"promotion-0": "Кухни на заказ со скидкой <percent>23%</percent> <br></br> и техникой в подарок <giftImg></giftImg><br></br> печь СВЧ, вытяжка или посудомоечная машина. Акция до <targetDate></targetDate>, количество ограничено.",
+		"promotion-0": "Кухни на заказ со скидкой <percent>23%</percent> <br></br> и техникой в подарок <giftImg></giftImg><br></br> печь СВЧ, вытяжка или посудомоечная машина. Акция до <targetDate></targetDate>. Количество подарков ограничено.",
 		"promotion-2": "Забирай весеннюю скидку! <br></br> <percent>23%</percent> <br></br> Только до <targetDate></targetDate> <br></br> А еще получи гарантированный подарок <giftImg></giftImg>",
 		"promotion-1": "Забирай зимнюю скидку! <br></br> <percent>23%</percent> <br></br> Только до <targetDate></targetDate> <br></br> А еще получи гарантированный подарок <giftImg></giftImg>",
 		"promotion-5": "Любой проект адаптируем под Ваш бюджет и помещение. Делаем кухни от 4000р. Наш салон: г. Минск, Калиновского 3. Выезд дизайнера по Минску БЕСПЛАТНО.",
