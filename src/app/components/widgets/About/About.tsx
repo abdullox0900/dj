@@ -37,7 +37,7 @@ export const About = () => {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 sm:flex-1 w-full z-50 rounded-[20px] overflow-hidden">
             <div className="flex flex-col gap-2 bg-yellow-2 text-[#292929] px-[20px] py-[20px] md:px-[30px] md:py-[20px] max-w-full w-full lg:min-h-[160px]">
-              <h3 className={cn(styles.card__title, "text-[#292929] max-[550px]:text-[16px]")}>30</h3>
+              <h3 className={cn(styles.card__title, "text-[#292929]")}>30</h3>
               <p className={styles.card__desc}>
                 {t("Years of experience in the furniture industry")}
               </p>
