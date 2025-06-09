@@ -141,7 +141,7 @@ export const Promotions = () => {
 
         {locale === "ru" && (
           <PromotionsItem
-            className={cn("lg:right-[0%] z-50 lg:w-[38%] max-lg:-mt-[0px]")}
+            className={cn("lg:right-[0%] z-50 lg:w-[35%] max-lg:-mt-[0px]")}
             bgUrl="/assets/images/promotions/promotions-2.jpg"
             text={
               <p className="text-[22px] leading-[1.2] font-bold text-white w-auto lg:pr-[30%]"  >

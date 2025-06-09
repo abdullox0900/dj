@@ -102,7 +102,7 @@ export const PromotionsItem: FC<PropsWithClassName<Props>> = ({
         return (
           <Button
             title="Запишись на встречу с
-дизайнером."
+дизайнером"
             className="!px-6"
             classNameSpan="text-[18px] py-[3px] font-bold"
             onClick={() => dispatch(setOpenCallbackModal(true, "Записаться на встречу с дизайнером."))}

@@ -27,7 +27,7 @@ export const DProjectScreen = () => {
         </div>
 
         {/* Promotion Section */}
-        <div className="bg-[#121212] text-white py-10 md:py-20 bg-[url('/assets/images/accordion__bg.jpg')] bg-cover bg-center bg-blend-overlay bg-opacity-90 ">
+        <div className="bg-[#121212] text-white py-10 md:py-20 bg-[url('/assets/images/3d-bg.jpg')] bg-cover bg-center bg-blend-overlay bg-opacity-90 ">
           <div className=" px-4 md:px-6 flex justify-center max-[425px]:px-0">
             <div className="w-full max-w-md md:max-w-2xl bg-black bg-opacity-70 p-6 md:p-10 rounded-lg max-[425px]:p-2 max-[425px]:py-[20px]">
               {/* Main Headline */}
@@ -158,123 +158,104 @@ export const DProjectScreen = () => {
         <BoxWrapper className="lg:pt-0 mt-[20px]" title={t("3d project")}>
           <div className="mb-8 space-y-3">
             <div className="flex flex-col gap-2 text-[20px] font-medium">
-              <p>-3D проект кухни</p>
-              <p>-Схема размещения электрических розеток</p>
-              <p>-Схема вывода сантехники и канализации</p>
-              <p>-Схема укладки плитки в рабочей зоне</p>
-              <p>-Визуализация</p>
+              <p>1. Замер</p>
+              <p>2. Визуализация</p>
+              <p>3. 3D проект кухни</p>
+              <p>4. Схема размещения электрических розеток</p>
+              <p>5. Схема вывода сантехники и канализации</p>
+              <p>6. Схема укладки плитки в рабочей зоне</p>
             </div>
           </div>
 
           <div className="grid grid-cols-1 gap-5 gap-y-8">
+            {/* 1. Замер */}
             <div className="flex flex-col gap-2">
-              <Image
-                className="w-full h-auto"
-                src="/assets/images/3d-project/5.jpg"
-                alt="3d-project-5"
-                width={0}
-                height={0}
-                sizes="100%"
-              />
               <p className="text-xl lg:text-2xl font-semibold">
-                {t("Measuring")}
+                1. Замер
               </p>
-            </div>
-
-            {/* Added perspective view image for kitchen in pro100 */}
-            <div className="flex flex-col gap-2">
               <Image
                 className="w-full h-auto max-w-4xl mx-auto"
-                src="/assets/images/3d-project/perspective.jpg"
-                alt="kitchen-perspective-view"
+                src="/assets/images/3d-project/5.jpg"
+                alt="Замер кухни"
                 width={0}
                 height={0}
                 sizes="100%"
               />
-              <p className="text-xl lg:text-2xl font-semibold">
-                Общий вид кухни в перспективе
-              </p>
             </div>
 
+            {/* 2. Визуализация */}
             <div className="flex flex-col gap-2">
+              <p className="text-xl lg:text-2xl font-semibold">
+                2. Визуализация
+              </p>
               <Image
-                className="w-full h-auto max-w-4xl mx-auto" /* Increased size */
+                className="w-full h-auto max-w-4xl mx-auto"
                 src="/assets/images/3d-project/1.jpg"
-                alt="3d-project-1"
+                alt="Визуализация кухни"
                 width={0}
                 height={0}
                 sizes="100%"
               />
+            </div>
+
+            {/* 3. 3D проект кухни */}
+            <div className="flex flex-col gap-2">
               <p className="text-xl lg:text-2xl font-semibold">
-                {t("3d project 5")}
+                3. 3D проект кухни
               </p>
-            </div>
-
-            <div className="flex flex-col gap-2">
               <Image
-                className="w-full h-auto max-w-4xl mx-auto" /* Increased size */
-                src="/assets/images/3d-project/6.jpg"
-                alt="3d-project-1"
-                width={0}
-                height={0}
-                sizes="100%"
-              />
-            </div>
-
-            <div className="flex flex-col gap-2">
-              <Image
-                className="w-full h-auto max-w-4xl mx-auto" /* Increased size */
+                className="w-full h-auto max-w-4xl mx-auto"
                 src="/assets/images/3d-project/7.jpg"
-                alt="3d-project-1"
+                alt="3D проект кухни"
                 width={0}
                 height={0}
                 sizes="100%"
               />
-              <p className="text-xl lg:text-2xl font-semibold">
-                {t("3d project")}
-              </p>
             </div>
 
+            {/* 4. Схема размещения электрических розеток */}
             <div className="flex flex-col gap-2">
+              <p className="text-xl lg:text-2xl font-semibold">
+                4. Схема размещения электрических розеток
+              </p>
               <Image
-                className="w-full h-auto max-w-4xl mx-auto" /* Increased size */
+                className="w-full h-auto max-w-4xl mx-auto"
                 src="/assets/images/3d-project/3.jpg"
-                alt="3d-project-3"
+                alt="Схема размещения электрических розеток"
                 width={0}
                 height={0}
                 sizes="100%"
               />
-              <p className="text-xl lg:text-2xl font-semibold">
-                {t("3d project 2")}
-              </p>
             </div>
 
+            {/* 5. Схема вывода сантехники и канализации */}
             <div className="flex flex-col gap-2">
+              <p className="text-xl lg:text-2xl font-semibold">
+                5. Схема вывода сантехники и канализации
+              </p>
               <Image
-                className="w-full h-auto max-w-4xl mx-auto" /* Increased size */
+                className="w-full h-auto max-w-4xl mx-auto"
                 src="/assets/images/3d-project/4.jpg"
-                alt="3d-project-4"
+                alt="Схема вывода сантехники и канализации"
                 width={0}
                 height={0}
                 sizes="100%"
               />
-              <p className="text-xl lg:text-2xl font-semibold">
-                {t("3d project 3")}
-              </p>
             </div>
 
+            {/* 6. Схема укладки плитки в рабочей зоне */}
             <div className="flex flex-col gap-2">
+              <p className="text-xl lg:text-2xl font-semibold">
+                6. Схема укладки плитки в рабочей зоне
+              </p>
               <Image
-                className="w-full h-auto max-w-4xl mx-auto" /* Increased size */
+                className="w-full h-auto max-w-4xl mx-auto"
                 src="/assets/images/3d-project/2.jpg"
-                alt="3d-project-2"
+                alt="Схема укладки плитки в рабочей зоне"
                 width={0}
                 height={0}
                 sizes="100%"
               />
-              <p className="text-xl lg:text-2xl font-semibold">
-                {t("3d project 4")}
-              </p>
             </div>
 
             {/* Added CTA button at the end of the page */}
