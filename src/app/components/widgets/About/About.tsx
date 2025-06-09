@@ -44,7 +44,7 @@ export const About = () => {
             </div>
             <div className="flex flex-col gap-2 bg-[#fff] px-[20px] py-[20px] md:px-[30px] md:py-[20px] max-w-full w-full lg:min-h-[160px]">
               <h3 className={cn(styles.card__title, "text-yellow-2")}>
-                <span className="text-xl max-[550px]:text-[18px]">{t("Up to")}</span> 5
+                <span className="text-xl max-[550px]:text-[22px]">{t("Up to")}</span> 5
               </h3>
               <p className={styles.card__desc}>{t("Years of warranty")}</p>
             </div>
@@ -68,7 +68,7 @@ export const About = () => {
                   "text-yellow-2 sm:text-[#292929]",
                 )}
               >
-                <span className="text-xl max-[550px]:text-[18px]">
+                <span className="text-xl max-[550px]:text-[22px]">
                   {locale === "ru" ? t("Under") : t("Installment")}
                 </span>{" "}
                 0%
